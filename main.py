@@ -9,11 +9,11 @@ parser.add_argument('-p', '--file_path', type=str, metavar="", required=True, he
 args = parser.parse_args()
 
 
-def scrape_movie(search):
+def scrape_movie(movie_title):
     fetcher = ImdbSearchFetcher()
     scraper = MovieScraper()
 
-    filtered_movies = fetcher.filtering_movies(search)
+    filtered_movies = fetcher.filtering_movies(movie_title)
     scraped_movies = scraper.scrape(filtered_movies)
     return scraped_movies
 
