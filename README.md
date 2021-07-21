@@ -1,4 +1,5 @@
-Imdb-Web-Scraping
+# Imdb-Web-Scraping
+
 To run the project you must install the following packages in the project folder:
 
 pip install bs4
